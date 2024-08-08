@@ -74,3 +74,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom styles for the landing page */
+body.light {
+  --bg-gradient-from: #8AEAFF;
+  --bg-gradient-to: #FF4E50;
+  --text-color: #4B0082;
+  --card-bg: #FFFFFF;
+}
+
+body.dark {
+  --bg-gradient-from: #4B0082;
+  --bg-gradient-to: #FF4E50;
+  --text-color: #F9D62E;
+  --card-bg: #2C3E50;
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--bg-gradient-from), var(--bg-gradient-to));
+}
+
+.text-custom {
+  color: var(--text-color);
+}
+
+.bg-custom-card {
+  background-color: var(--card-bg);
+}
